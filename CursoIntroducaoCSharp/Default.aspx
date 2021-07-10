@@ -11,9 +11,4 @@
     <p>
         <asp:Button ID="Button1" runat="server" Text="Ola" OnClick="Button1_Click" CssClass="btn btn-secondary" />
     </p>
-    <p>
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Abastecer.aspx">Abastecer</asp:HyperLink>
-        <br />
-        <a id="link_padrao" href="Abastecer.aspx">Abastecer</a>
-    </p>
 </asp:Content>
