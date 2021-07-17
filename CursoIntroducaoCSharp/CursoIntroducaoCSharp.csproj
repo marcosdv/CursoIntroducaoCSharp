@@ -68,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Abastecer.aspx" />
+    <Content Include="Adm\BarraEdicao.ascx" />
+    <Content Include="Adm\CadCategoria.aspx" />
+    <Content Include="Adm\CadNoticia.aspx" />
+    <Content Include="Adm\Default.aspx" />
     <Content Include="CalculoIMC.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Web.config" />
@@ -80,6 +84,41 @@
     <Compile Include="Abastecer.aspx.designer.cs">
       <DependentUpon>Abastecer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Adm\BarraEdicao.ascx.cs">
+      <DependentUpon>BarraEdicao.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\BarraEdicao.ascx.designer.cs">
+      <DependentUpon>BarraEdicao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\CadCategoria.aspx.cs">
+      <DependentUpon>CadCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\CadCategoria.aspx.designer.cs">
+      <DependentUpon>CadCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\CadNoticia.aspx.cs">
+      <DependentUpon>CadNoticia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\CadNoticia.aspx.designer.cs">
+      <DependentUpon>CadNoticia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\SiteAdm.Master.cs">
+      <DependentUpon>SiteAdm.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\SiteAdm.Master.designer.cs">
+      <DependentUpon>SiteAdm.Master</DependentUpon>
+    </Compile>
     <Compile Include="CalculoIMC.aspx.cs">
       <DependentUpon>CalculoIMC.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -87,6 +126,7 @@
     <Compile Include="CalculoIMC.aspx.designer.cs">
       <DependentUpon>CalculoIMC.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Categoria.cs" />
     <Compile Include="Classes\Imc.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -94,6 +134,11 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DsGeral.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsGeral.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
@@ -105,6 +150,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DsGeral.xsc">
+      <DependentUpon>DsGeral.xsd</DependentUpon>
+    </Content>
+    <Content Include="Adm\SiteAdm.Master" />
+    <None Include="DsGeral.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsGeral.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DsGeral.xss">
+      <DependentUpon>DsGeral.xsd</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <Content Include="Slides\Aula01.pdf" />
